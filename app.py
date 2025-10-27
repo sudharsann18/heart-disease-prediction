@@ -6,7 +6,8 @@ import numpy as np
 app = Flask(__name__)
 
 # Load the trained model
-model = pickle.load(open("model.pkl", "rb"))
+model = pickle.load(open("heart_model.pkl", "rb"))
+
 
 # Update this list to match your dataset’s features
 feature_names = ['age','sex','cp','trestbps','chol','fbs','restecg',
